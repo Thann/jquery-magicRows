@@ -14,11 +14,11 @@
       if (i % 2 === 0)
         sm = true;
       if (sm || md || lg) {
-        const e = $('<div class="col-sm-12">');
-        if (!sm) e.addClass('hidden-sm');
-        if (!md) e.addClass('hidden-md');
-        if (!lg) e.addClass('hidden-lg');
-        e.insertAfter(el);
+        let klass = 'col-sm-12';
+        if (!sm) klass += ' hidden-sm';
+        if (!md) klass += ' hidden-md';
+        if (!lg) klass += ' hidden-lg';
+        $('<div class="'+klass+'">').insertAfter(el);
       }
     });
     return this;
