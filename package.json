@@ -1,0 +1,11 @@
+{
+  "name": "jquery-magicrows",
+  "version": "0.0.1",
+  "description": "Inserts invisible rows so when one el expands the row below always moves down.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thann/jquery-magicrows.git"
+  },
+  "main": "index.js",
+  "license": "Unlicense"
+}
