@@ -1,0 +1,14 @@
+stages:
+  - post
+
+pages:
+  stage: post
+  script:
+    - mkdir public
+    - cp index.js public
+    - cp demo.html public/index.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
