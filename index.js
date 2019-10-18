@@ -1,7 +1,7 @@
 // Inserts invisible rows so when one el expands the row below always moves down
 (function($) {
   $.fn.magicRows = function() {
-    this.each((i, el) => {
+    this.each(function(i, el) {
       i = i+1;
       let sm, md, lg;
       // console.log("EL", "4:", i % 4, "3:", i % 3, "2:", i % 2,  el)

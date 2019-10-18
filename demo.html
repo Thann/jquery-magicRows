@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MagicRows Demo</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+      <!-- integrity="sha512-6e722fce1e8553be592b1a741972c7f5b7b0cdafce230e9d2d587d20283482881c96660682e4095a5f14df45a96ec193a9b222030c53b1b7bbe8312b2eae440d" -->
+      <!-- integrity="sha256-0925e8ad7bd971391a8b1e98be8e87a6971919eb5b60c196485941c3c1df089a" -->
+    <script src="./index.js"
+      crossorigin="anonymous" type="application/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+      <div class="box col-sm-6 col-md-3"></div>
+    </div>
+    <style>
+      .box {
+        height: 100px;
+        box-sizing: border-box;
+        border: 3px solid white;
+        background-color: green;
+      }
+      .box:hover {
+        height: 120px;
+      }
+    </style>
+    <script>
+      $( document ).ready(function() {
+        $('.box').magicRows();
+      });
+    </script>
+  </body>
+</html>
